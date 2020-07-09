@@ -10,10 +10,6 @@
 
 #!/bin/bash
 # Write a function `greet` that returns "hello world!"
-# another line
-# this is another line added
-# added another line here
-# added one more line
 
 greet (){
 echo "hello world!"
