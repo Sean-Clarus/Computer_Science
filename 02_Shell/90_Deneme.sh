@@ -17,6 +17,10 @@ echo $c
 # read -p “Enter Something: ” something
 # echo “You Entered: $something”
 # read command i geriye bir değer döndürmediği için $(read ….) şeklinde kullanılmıyormuş, o yüzden
-read -p "Enter Something:" something
+read -p "Enter Something:" something # -p komuta string ifade girebilmemizi sagliyor.
 echo "You Entered: $something"
 # şeklinde kullanmamız gerekiyor
+
+echo "Bir sayi giriniz: "; read sayi # aslinda bash'te ayni satirda birden fazla komut calismaz,
+                                     # ama ; girdigimizde ayni satirdan devam edebiliriz.
+echo "Girdiginiz sayi $sayi"

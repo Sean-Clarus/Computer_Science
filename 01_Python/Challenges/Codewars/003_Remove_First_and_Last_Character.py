@@ -12,8 +12,8 @@ def remove_char(s):
     s = list(s)
     s.remove(s[0])
     s.pop()
-    # s.remove(s[-1]) # tam dogru sonucu vermiyor, sondaki harf daha once de string icerinde karsilasildigi icin
-    #                 # once o harf cikariliyor
+    # s.remove(s[-1]) # tam dogru sonucu vermiyor, sondaki harf daha once de string icerinde 
+                      #  karsilasildigi icin once o harf cikariliyor
     
     return("".join(s))
 
