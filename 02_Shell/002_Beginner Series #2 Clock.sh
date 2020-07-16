@@ -22,24 +22,40 @@
 #   tester(1, 0, 0, 3600000)
 # end
 
-h=$1
-m=$2
-s=$3
+h=1
+m=2
+s=3
 
 # bu sekilde yaparak fonksiyonu tanimliyoruz,
 # islemler suslu parantezin icinde yapiliyor.
 # let kullandigimiz icin $(()) e gerek yok.
 
 converter(){
-h_seconds=$(($h*3600))
-m_seconds=$(($m*60))
+# h_seconds=$(($h*3600))
+# m_seconds=$(($m*60))
 
-s_total=$(($h_seconds+$m_seconds+$s))
+# s_total=$(($h_seconds+$m_seconds+$s))
 
-total=$(($s_total*1000))
+# total=$(($s_total*1000))
+
+let h_seconds=$h*3600
+
+let m_seconds=$m*60
+
+let s_total=$h_seconds+$m_seconds+$s
+
+let total=$s_total*1000
 
 echo $total
 
 }
 
 converter
+
+# Best Solution
+
+# h=$1
+# m=$2
+# s=$3
+
+# echo $(( ($h * 3600 + $m * 60 + $s) * 1000 ))
